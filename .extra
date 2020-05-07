@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# vim emulation for bash
+set -o vi

@@ -9,6 +9,7 @@ alias .....="cd ../../../.."
 # Shortcuts
 alias dsk="cd ~/Desktop"
 alias pr="cd ~/Projects"
+alias yuan="cd ~/Desktop/School/Research.Yuan.Li"
 alias g="git"
 alias jn="jupyter notebook"
 alias rm="rm -i"
