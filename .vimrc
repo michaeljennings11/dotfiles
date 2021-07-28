@@ -1,4 +1,4 @@
-:set number relativenumber
+set number relativenumber
 
 syntax on
 
@@ -12,3 +12,8 @@ set timeoutlen=1000
 set ttimeoutlen=5
 
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
+
+set hlsearch
+set incsearch
+
+set tags=./tags,tags;

@@ -13,6 +13,8 @@ alias yuan="cd ~/Desktop/School/Research.Yuan.Li"
 alias g="git"
 alias jn="jupyter notebook"
 alias rm="rm -i"
+alias arm="env /usr/bin/arch -arm64 /bin/bash --login"
+alias intel="env /usr/bin/arch -x86_64 /bin/bash --login"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -35,3 +37,9 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# sleep display
+alias sleep="pmset displaysleepnow"
+
+# use exuberant ctags instead of macOSX default
+alias ctags="`brew --prefix`/bin/ctags"
