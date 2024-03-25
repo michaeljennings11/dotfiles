@@ -17,3 +17,5 @@ set hlsearch
 set incsearch
 
 set tags=./tags,tags;
+
+set colorcolumn=80  
