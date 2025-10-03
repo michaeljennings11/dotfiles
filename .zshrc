@@ -120,6 +120,8 @@ alias lal='colorls -al'
 alias pr='cd ~/Projects'
 alias dsk='cd ~/Desktop'
 
+export EDITOR=nvim
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/mjennings/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
