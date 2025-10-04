@@ -113,31 +113,9 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval "$(rbenv init -)"
-alias ls='colorls'
-alias la='colorls -a'
-alias lal='colorls -al'
-alias pr='cd ~/Projects'
-alias dsk='cd ~/Desktop'
+# source all other dotfiles
+for file in $HOME/dotfiles/.{exports,aliases,functions,extra}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
-export EDITOR=nvim
-export MANPAGER='nvim +Man!'
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/mjennings/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="$HOME/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# add homebrew directory to end of PATH
-export PATH="$PATH:/opt/homebrew/bin"
-export PATH="$HOME/bin:$PATH"
