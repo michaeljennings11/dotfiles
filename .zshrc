@@ -121,6 +121,7 @@ alias pr='cd ~/Projects'
 alias dsk='cd ~/Desktop'
 
 export EDITOR=nvim
+export MANPAGER='nvim +Man!'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
