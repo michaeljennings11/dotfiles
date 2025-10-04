@@ -1,0 +1,3 @@
+workon () {
+    tmux-$1
+}
