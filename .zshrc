@@ -139,3 +139,4 @@ unset __conda_setup
 
 # add homebrew directory to end of PATH
 export PATH="$PATH:/opt/homebrew/bin"
+export PATH="$HOME/bin:$PATH"
